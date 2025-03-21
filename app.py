@@ -49,6 +49,8 @@ rule_engine = RuleEngine()
 
 # Serve frontend routes
 @app.route('/')
+def home():
+    return jsonify({"message": "Flask App Deployed on Vercel!"})
 @app.route('/index.html')
 def serve_dashboard():
     return render_template('index.html')
