@@ -1,0 +1,20 @@
+[
+    {
+        "field": "transaction_amount",
+        "operator": "greater_than",
+        "value": "10000",
+        "reason": "Large transaction amount detected"
+    },
+    {
+        "field": "payment_mode",
+        "operator": "equals",
+        "value": "crypto",
+        "reason": "High-risk payment method"
+    },
+    {
+        "field": "transaction_location",
+        "operator": "equals",
+        "value": "high_risk_country",
+        "reason": "Transaction from high-risk location"
+    }
+] 
